@@ -49,6 +49,7 @@ df = pd.DataFrame(data, columns=['year', 'name', 'births', 'sex'])
 df['name'] = df['name'].str.strip().str.title()
 df['sex'] = df['sex'].str[:1]
 df = df.sort_values(by=['year', 'births'], ascending=False)
+logging.info(f'{df.head()}')
 
 df_ = df.groupby(['year', 'sex']).sum().reset_index()
 df_k = df_[df_.sex == 'KOBIETA']
