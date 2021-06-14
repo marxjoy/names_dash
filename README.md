@@ -1,7 +1,7 @@
 # Names popularity Dashboard
 Dashboard with data on first names given in Poland in the 21st century. 
 
-Demo:
+# Demo:
 [http://18.198.22.122/](http://18.198.22.122/)
 
 Data source:
@@ -24,5 +24,5 @@ SQL_DATABASE=xxx
 
 Run containers:
 ```
-bash run_docker.sh
+sudo bash run_docker.sh
 ```
